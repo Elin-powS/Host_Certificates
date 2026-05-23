@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aciful Islam Khan | Portfolio</title>
+    <style>
+        /* Modern reset and background */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px 20px;
+            text-align: center; 
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Flexbox wrapper to center and align cards beautifully */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Makes all cards equal height dynamically */
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Upgraded interactive cards */
+        .menu-card { 
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 25px; 
+            border-radius: 12px; 
+            width: 240px; 
+            text-decoration: none; 
+            color: #333; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* Clean animations when hovered */
+        .menu-card:hover { 
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+            background-color: #fafbfc;
+        }
+
+        .menu-card h3 {
+            margin: 0 0 10px 0;
+            color: #0073b1; /* Professional accent color */
+            font-size: 1.25rem;
+        }
+
+        .menu-card p {
+            margin: 0;
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Achievements & Certifications</h1>
+    <p class="subtitle">Click on a card below to view the official document on its own page:</p>
+
+    <div class="card-container">
+        <a href="CR_Certificate_HTML.html" class="menu-card">
+            <h3>Class Representative</h3>
+            <p>View KUET 2k19 Batch Certificate</p>
+        </a>
+
+        <a href="Bitfest_Certificate_HTML.html" class="menu-card">
+            <h3>Bitfest Certification</h3>
+            <p>View competition details and achievement</p>
+        </a>
+
+        <a href="DataHead_HTML.html" class="menu-card">
+            <h3>Datathon Certification</h3>
+            <p>View engineering challenge credentials</p>
+        </a>
+    </div>
+
+</body>
+</html>

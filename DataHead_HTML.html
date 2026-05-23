@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievement View</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        /* Container scales nicely with a maximum desktop width limit */
+        .responsive-pdf-container {
+            width: 100%;
+            max-width: 900px;
+            /* Creates a clean vertical aspect ratio that resizes perfectly on mobile */
+            position: relative;
+            padding-top: 120%; /* Controls the height ratio relative to width */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .responsive-pdf-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Second Achievement Title</h1>
+
+    <div class="responsive-pdf-container">
+        <iframe src="Resources/DataHead.pdf"></iframe>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Representative Certificate</title>
+    <style>
+        /* Remove default browser margins and set full screen height */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevents double scrollbars */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        /* Flexbox layout stacks title and iframe vertically */
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* 100% of the viewport height */
+        }
+
+        .header-title {
+            padding: 15px 20px;
+            margin: 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            color: #333;
+            z-index: 10;
+        }
+
+        /* The wrapper expands to fit the exact remaining screen space */
+        .iframe-wrapper {
+            flex-grow: 1;
+            width: 100%;
+            position: relative;
+        }
+
+        /* The iframe perfectly fills its parent wrapper */
+        .iframe-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <h1 class="header-title">Class Representative Certificate</h1>
+        
+        <div class="iframe-wrapper">
+            <iframe src="Resources/CR_Certificate.pdf"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
